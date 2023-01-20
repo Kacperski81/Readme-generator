@@ -58,14 +58,12 @@ function writeToFile(fileName, data) {
     });
 }
 
-inquirer.prompt(questions).then((answer) => {
-    console.log('Generating README...');
-    writeToFile('README.md',answer);
-});
-
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((answer) => {
+        console.log('Generating README...');
+        writeToFile('README.md',answer);
+    });
 }
 
 // function call to initialize program
