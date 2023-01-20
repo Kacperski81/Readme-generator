@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
 
 inquirer.prompt(questions).then((answer) => {
     console.log('Generating README...');
-    writeToFile('test.md',answer);
+    writeToFile('README.md',answer);
 });
 
 // function to initialize program
