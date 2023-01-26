@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectName}
-  <kbd>license</kbd><kbd>${data.projectLicence}</kbd>
+  ${data.projectLicence}
   ## Description
   ${data.projectDescription}
   ## Table of Contents
